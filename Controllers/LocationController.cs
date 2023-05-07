@@ -51,10 +51,10 @@ public class LocationController : ControllerBase
        }
 
        double distance=00.00;
-      distance= getdistance(LOC1.LAT,LOC1.LNG,LOC2.LAT,LOC2.LNG);
+      distance= getdistance(LOC1.LAT,LOC2.LAT,LOC1.LNG,LOC2.LNG);
 
 
-        string result="The distance between "+LOC1.City+" ("+ZIP1+") to "+LOC2.City+" ("+ZIP2+") is "+distance+" miles";
+        string result="The distance between "+LOC1.City+" ("+ZIP1+") to "+LOC2.City+" ("+ZIP2+") is "+distance.ToString("0.###")+" miles";
          return  result;
     }
 
@@ -92,9 +92,9 @@ public class LocationController : ControllerBase
         double c = 2 * Math.Asin(Math.Sqrt(a));
  
         // Radius of earth in
-        // kilometers. Use 3956
-        // for miles
-        double r = 6371;
+        // Use 6371 kilometers. 
+        // Use 3956 for miles
+        double r = 3956;
  
         // calculate the result
         return (c * r);

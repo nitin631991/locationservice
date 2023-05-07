@@ -72,17 +72,17 @@ public class LocationRepo : ILocationRepo
                 },
                 new Location
                 {
-                    Zip  =90210,
-                    LAT  =34.100517,
-                    LNG=-118.414712,
-                    City="Beverly Hills"
+                    Zip  =92801,
+                    LAT  =33.844983,
+                    LNG=-117.952151,
+                    City="Anaheim"
                 },
                 new Location
                 {
-                    Zip  =90220,
-                    LAT  =33.88151,
-                    LNG=-118.234451,
-                    City="Compton"
+                    Zip  =92649,
+                    LAT  =33.72524,
+                    LNG=-118.051579,
+                    City="Huntington Beach"
                 }
                 };
                 context.Locations.AddRange(locations);
